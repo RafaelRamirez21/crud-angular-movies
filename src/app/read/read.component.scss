@@ -1,0 +1,16 @@
+.th_style{
+  text-align: center;
+}
+.btn{
+  margin: auto;
+  width: 60px;
+  height: 30px;
+ 
+}
+.tr_td{
+  margin: auto;
+  display: flex;
+  & button a{
+    display: block;
+  }
+}
