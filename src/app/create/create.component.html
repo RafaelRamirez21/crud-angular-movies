@@ -1,9 +1,9 @@
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-5 ">
 
   <!-- show error message -->
   <div *ngIf="errorMsg" class="alert alert-warning alert-dismissible fade show" role="alert">
     <strong>{{errorMsg}}</strong>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" (click)="errorMsg=false"
+    <button type="button" class="btn btn-primary" data-bs-dismiss="alert" (click)="errorMsg=false"
       aria-label="Close"></button>
   </div>
   <div *ngIf="successMsg" class="alert alert-success alert-dismissible fade show" role="alert">
@@ -11,7 +11,7 @@
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
-  <form [formGroup]="userForm" (ngSubmit)="userSubmit()">
+  <form class="centerPrueba" [formGroup]="userForm" (ngSubmit)="userSubmit()">
     <div class="col-lg-4 mt-2">
       <input type="text" class="form-control" formControlName="mov_title" placeholder="Title">
     </div>
