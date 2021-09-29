@@ -1,1 +1,4 @@
 /* No CSS *//*# sourceMappingURL=app.component.css.map */
+.btn-close{
+  position:absolute;top:0;right:0;z-index:2;padding:1.25rem 1rem
+}
