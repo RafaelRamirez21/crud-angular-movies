@@ -18,7 +18,8 @@ export class CreateComponent implements OnInit {
   ngOnInit(): void {
     // console.log(this.router.snapshot.paramMap.get('id'),'getid'),
     this.getparamId=this.router.snapshot.paramMap.get('id');
-    this.service.getSingleData(this.getparamId).subscribe((res)=>{
+    if(this.getparamId){
+      this.service.getSingleData(this.getparamId).subscribe((res)=>{
         console.log(res,'res==>')
         this.userForm.patchValue({  
         "mov_title":res.mov_title,
@@ -26,8 +27,11 @@ export class CreateComponent implements OnInit {
         'mov_rel_country':res.mov_rel_country,
         'mov_lang':res.mov_lang
           
-        })
+        });
     });
+
+    }
+
     
   }
   userForm=new FormGroup({

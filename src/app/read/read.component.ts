@@ -21,9 +21,11 @@ export class ReadComponent implements OnInit {
   }
   // getdeleteID
   deleteID(id:any){
+
     this.service.deleteData(id).subscribe((res)=>{
       console.log(res,'deleted==>')
       this.successMsg='Movie deleted';
+      console.log(id)
 
       // refresh the page
       this.service.getAllData().subscribe((res)=>{
