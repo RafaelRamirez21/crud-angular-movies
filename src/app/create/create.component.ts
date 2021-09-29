@@ -18,9 +18,11 @@ export class CreateComponent implements OnInit {
   ngOnInit(): void {
     // console.log(this.router.snapshot.paramMap.get('id'),'getid'),
     this.getparamId=this.router.snapshot.paramMap.get('id');
+    console.log(this.getparamId);
+    
     if(this.getparamId){
       this.service.getSingleData(this.getparamId).subscribe((res)=>{
-        console.log(res,'res==>')
+        console.log(res,'res3==>')
         this.userForm.patchValue({  
         "mov_title":res.mov_title,
         'mov_dt_rel':res.mov_dt_rel,
@@ -45,7 +47,7 @@ export class CreateComponent implements OnInit {
    if(this.userForm.valid){
      console.log(this.userForm.value)
      this.service.createData(this.userForm.value).subscribe((res)=>{
-       console.log(res,'res===>')
+       console.log(res,'res4===>')
        this.userForm.reset();
        this.successMsg='Movie added';
        console.log(this.successMsg)
