@@ -4,7 +4,7 @@
   <!-- show error message -->
   <div *ngIf="errorMsg" class="alert alert-warning alert-dismissible fade show" role="alert">
     <strong>{{errorMsg}}</strong>
-    <button type="button" class="btn btn-primary" data-bs-dismiss="alert" (click)="errorMsg=false"
+    <button type="button" class="btn btn-close" data-bs-dismiss="alert" (click)="errorMsg=false"
       aria-label="Close"></button>
   </div>
   <div *ngIf="successMsg" class="alert alert-success alert-dismissible fade show" role="alert">
