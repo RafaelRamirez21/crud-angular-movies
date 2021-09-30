@@ -1,9 +1,17 @@
-<div class="container-fluid mt-5">
-  <h1 class="text-center">Movies Management</h1>
-  <div class='btn-container'>
-    <a routerLink="create" class="btn btn-success">Create</a>
+<div class="container-fluid mt-5 background-container">
+
+  <nav class="navbar navbar-dark ">
+    <h1 class="text-center">Movies Management</h1>
+    <button type="button" class="btn btn-outline-dark">Dark Mode</button>
+  </nav>
+  <div class='btn-container ml-3'>
+    <a routerLink="create" class="btn btn-outline-secondary">Create</a>
     &nbsp;
-    <a routerLink="read" class="btn btn-primary">Read</a>
+    <a routerLink="read" class="btn btn-outline-primary">Read</a>
   </div>
+
+
+
+
   <router-outlet></router-outlet>
 </div>

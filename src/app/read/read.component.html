@@ -9,10 +9,10 @@
 
 
 
-  <div class="table-responsive">
-    <table class="table">
-      <thead>
-        <tr class="th_style">
+  <div class="table-responsive ">
+    <table class="table background  table-striped">
+      <thead class=" thead-dark">
+        <tr class=" th_style">
           <th scope="col">id</th>
           <th scope="col">Title</th>
           <th scope="col">Lenguage</th>
@@ -29,9 +29,9 @@
           <td>{{us.mov_dt_rel}}</td>
           <td>{{us.mov_rel_country}}</td>
           <td class="tr_td">
-            <button class="btn btn-sm mt-1 btn-danger" (click)="deleteID(us.id)">Delete</button>
+            <button class="btn btn-sm mt-1 btn-outline-danger" (click)="deleteID(us.id)">Delete</button>
             &nbsp;
-            <a [routerLink]="['/create',us.id]" class="btn btn-sm mt-1 btn-success">Update</a>
+            <a [routerLink]="['/create',us.id]" class="btn btn-sm mt-1 btn-outline-success">Update</a>
           </td>
         </tr>
       </tbody>

@@ -1,8 +1,20 @@
 .btn-container{
-  margin-top: 5px;
-  display: flex;
-  justify-content:center;
+  // margin-top: 5px;
+  // display: flex;
+  // justify-content:center;
+
+}  
+
+
+.margin{
+  margin-top:0 !important;
 }
-.background-container{
-  background: url(https://unplash.com/photos/CiUR8zISX60);
+.container-fluid{
+  height:100vh;
+  margin-top: 0px !important;
+
+}
+.Header--section{
+  background: gray;
+  
 }
